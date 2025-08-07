@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #7786f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.controls-container,
+.wrapper,
+.result-container {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.controls-container input,
+.controls-container select {
+  padding: 0.6em 1em;
+  margin: 1em 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+button {
+  padding: 0.7em 2em;
+  background-color: #5561e8;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3e47c5;
+}
+
+#letter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+#letter-container button {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #7786f5;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #7786f5;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#letter-container button:hover {
+  background-color: pink;
+  color: #fff;
+}
+
+#letter-container button.correct {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+#letter-container button.incorrect {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+#user-input-section {
+  margin-top: 1em;
+}
+
+.inputSpace {
+  margin: 0 5px;
+  font-size: 1.4em;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+#chances-display {
+  margin-top: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.hide {
+  display: none;
+}
+
+.hint-ref {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+#result-message {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1em;
+}

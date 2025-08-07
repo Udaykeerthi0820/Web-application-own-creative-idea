@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Guessing Game</title>
+  <link rel="stylesheet" href="wordwander.css">
+</head>
+<body>
+  <div class="controls-container">
+
+    <h2>Welcome to Word Wander</h2>
+
+    <input type="text" id="username" placeholder="Enter your name" />
+
+    <select id="level">
+      <option value="">Select Level</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+    <button id="start">Start</button>
+  </div>
+  <div class="wrapper hide">
+
+    <div class="hint-ref"></div>
+    <div id="user-input-section"></div>
+    <div id="message"></div>
+    <div id="letter-container"></div>
+    <div id="chances-display">Chances Left: 5</div>
+  </div>
+  <div class="result-container hide">
+    <div id="result-message"></div>
+    <button id="restart">Replay Level</button>
+    <button id="start-page" class="hide">Go to Start Page</button>
+  </div>
+
+  <script src="wordwander.js"></script>
+</body>
+</html>
